@@ -1,0 +1,76 @@
+@import url("https://use.typekit.net/wcs5jfx.css");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+/* basic elements */
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "erbaum", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 36px;
+}
+
+h2, h3, h4, h5 {
+  font-family: "erbaum", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 26px;
+}
+
+p {
+  font-size: 12px;
+}
+
+.cd-secondary-nav {
+  font-family: "axia", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.cd-primary-nav {
+  font-family: "axia", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.intro, .main supporting, footer, .sidebar {
+  display: flex;
+}
+
+@media screen and (max-width: 30em) {
+  .intro, .main supporting, footer, .sidebar {
+    flex-direction: column;
+  }
+
+  .summary {
+    background-image: url("/images/zenGardenPrimary.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    color: #fff;
+  }
+}
+@media screen and (min-width: 30em) {
+  .summary {
+    background-image: url("/images/zenGardenPrimary.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    color: #fff;
+  }
+
+  .preamble, .explanation, .participation, .benefits, .requirements {
+    width: 75%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
