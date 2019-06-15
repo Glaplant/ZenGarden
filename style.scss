@@ -69,7 +69,7 @@ p {
     flex-direction: column;
     }
 .summary {
-    background-image: url("/images/zenGardenPrimary.png");
+    background-image: url("zenGardenPrimary.png");
     background-repeat: no-repeat;
     background-size: auto;
     color: $color-white;
@@ -78,7 +78,7 @@ p {
 }
 @media screen and (min-width: 30em) {
     .summary {
-        background-image: url("/images/zenGardenPrimary.png");
+        background-image: url("zenGardenPrimary.png");
         background-repeat: no-repeat;
         background-size: auto;
         color: $color-white;
