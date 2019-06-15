@@ -1,0 +1,145 @@
+
+@import url("https://use.typekit.net/wcs5jfx.css");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+/* basic elements */
+html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 1em;
+}
+
+//gunmetal: #29303F
+$color-blue: #29303F;
+$color-white: #fff;
+$color-black: #000;
+
+//********************************
+//Erbaum Medium
+h1 {
+    font-family: 'erbaum', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size:36px;
+}
+
+//Erbaum Bold
+h3,h4,h5 {
+    font-family: 'erbaum', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size:26px;
+
+}
+
+//Open Sans
+p {
+    font-size:12px;
+}
+//Axia Regular
+.cd-secondary-nav {
+    font-family: 'axia', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:14px;
+}
+//Axia Black
+.cd-primary-nav {
+    font-family: 'axia', sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size:18px;
+}
+.intro, .summary, .preamble, .main, .sidebar {
+    flex-direction: column;
+}
+.participation, .requirements {
+    background-color: $color-blue;
+    color: $color-white;
+}
+h2 {
+    font-size: .7em;
+    color: $color-black;
+    font-family: 'erbaum', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+section {
+    background-color: $color-blue;
+    color: $color-white;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    width: 90%;
+}
+
+//********************************
+
+@media screen and (max-width: 30em) {
+     .explanation, .participation, .benefits, .requirements,  .footer {
+    flex-direction: column;
+    }
+    h2 {
+        position: absolute;
+        top: 35em;
+        left: 17em;
+    }
+    section {
+        background-image: url("zenGardenPrimary.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        color: $color-white;
+    }
+    .summary p:nth-last-child(1) {
+        background-color: $color-white;
+        color: $color-black;
+        opacity: .5;
+        width: 80%;
+    }
+
+
+}
+@media screen and (min-width: 30em) {
+    h2 {
+        position: absolute;
+        top: 22.5em;
+        left: 15em;
+    }
+    .main {
+        flex-direction: column;
+        width: 60%;
+    }
+    .summary {
+        flex-direction: column;
+        margin-bottom: 10em;
+    }
+    aside {
+        position: absolute;
+        left: 55em;
+        top: 32em;
+    }
+    .summary p:nth-last-child(1) {
+        background-color: $color-white;
+        color: $color-black;
+        opacity: .5;
+        width: 30%;
+    }
+    section {
+        background-image: url("zenGardenPrimary.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        color: $color-white;
+    }
+     .explanation, .participation, .benefits, .requirements, .footer  {
+        width: 75%;
+        flex-direction: column;
+    }
+}
+
+
